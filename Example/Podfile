@@ -3,6 +3,6 @@ use_frameworks!
 
 target 'RainyRefreshControl Demo' do
 
-    pod 'RainyRefreshControl'
+  pod 'RainyRefreshControl', :path => '../'
     
 end

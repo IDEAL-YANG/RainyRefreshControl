@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         tableView.addSubview(refresh)
     }
     
-    func doRefresh(){
+    @objc func doRefresh(){
         let popTime = DispatchTime.now() + Double(Int64(3.0 * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC);
         DispatchQueue.main.asyncAfter(deadline: popTime) { () -> Void in
             self.refresh.endRefreshing()
